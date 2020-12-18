@@ -6,7 +6,12 @@ To build and run the sample code please make sure you have the following prerequ
 - NodeJs >= v13.12  and <= v13.14.0
 - npm/Yarn
 - My development environment
-- node version -  v13.14.0 & npm
+```
+node -v
+    v13.14.0
+ npm -v
+    6.14.4
+```
 
 ## Getting Started
 This repository contains a sample ReactJs application.   When launched the sample web application displays a "search" box where you can enter a book name and press ENTER. Results matching your input will be displayed as a JSON String.  
