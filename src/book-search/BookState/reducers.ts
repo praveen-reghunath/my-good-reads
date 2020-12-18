@@ -14,7 +14,6 @@ const addToFavorites = (book: BookInfo, state: BookState) => {
 };
 
 const removeFromFavorites = (bookId: string, state: BookState) => {
-    console.log('Removing product with id: ' + bookId);
     const updatedWishList = state.wishList.filter(item => item.id !== bookId)
     return { ...state, wishList: updatedWishList };
 };

@@ -13,7 +13,6 @@ const BookSearch = () => {
     async function requestBooks(searchText: string) {
         if (searchText.length) {
             const allBooks = await getBooksByType(searchText);
-            console.log(allBooks);
             setAllAvailableBooks(allBooks.items);
         }
         else {
