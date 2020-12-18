@@ -68,7 +68,8 @@
         margin-top: .3rem;
     }
 
-    @media screen and (min-width: 400px) {
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
         .description {
             display: block;
         }
