@@ -16,7 +16,5 @@ You can follow the instruction below to launch the sample application.
 3. Navigate to [http://localhost:3000](http://localhost:3000)
 4. You can run tests using `yarn test` 
 
-Please feel free to make your own decisions about Web UI development. Though you are can use any UI library to build the web page, please see if you can avoid them. Also, you may use any state management technique.
-
 ### Exercise 1: Designed the web page in line with the bellow mockup.
 ![](./mockup.png)
