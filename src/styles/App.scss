@@ -1,0 +1,165 @@
+@import './variables';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+}
+
+h1,
+h2 {
+  font-size: 30px;
+  margin: $spacing-xxs 0;
+  font-weight: 700;
+}
+
+input {
+  font-size: 1rem;
+  border: 1px solid $gray40;
+  border-radius: .25rem;
+  padding: $spacing-xxs;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+}
+
+a {
+  cursor: pointer;
+  color: $blue-accent;
+
+  &:hover {
+    color: $blue-dark;
+  }
+
+  h1 {
+    flex: 1;
+  }
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: $blue-dark;
+  color: $white;
+  padding: $spacing-3xs $spacing-xs;
+
+  button {
+    padding: 0 $spacing-xs;
+  }
+}
+
+.header--content {
+  display: flex;
+  height: 10vh;
+
+  >* {
+    display: flex;
+    align-items: center;
+  }
+}
+
+main {
+  min-width: 300px;
+  max-width: 100vw;
+}
+
+.reading-list-container {
+  padding: 0;
+  width: 400px;
+  height: 100vh;
+
+  h2 {
+    position: relative;
+    color: $white;
+    background-color: $gray80;
+    margin: 0;
+    padding: 0.75rem;
+    text-align: center;
+  }
+
+  button {
+    position: absolute;
+    top: $spacing-xxs;
+    right: $spacing-xxs;
+    padding: 0;
+    min-width: 36px;
+  }
+}
+
+.reading-list-content {
+  padding: $spacing-xxs;
+}
+
+.empty {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  font-size: 1.5rem;
+  color: $gray40;
+}
+
+form {
+  margin-bottom: $spacing-xs;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.book {
+  border: 1px solid silver;
+  margin-top: .5rem;
+}
+
+.book--container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.search-params {
+  flex-grow: 3;
+
+}
+
+.sidebar {
+  flex-grow: 1;
+
+}
+
+.wish-list {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .wish-list {
+    top: calc(10vh + 1.5rem);
+    left: 70vw;
+    width: 20vw;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

@@ -1,0 +1,11 @@
+@import '../../styles/variables';
+
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    .item {
+        margin-bottom: $spacing-xxs;        
+    }
+}
