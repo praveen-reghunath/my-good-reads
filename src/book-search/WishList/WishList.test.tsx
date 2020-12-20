@@ -1,9 +1,12 @@
-import React from 'react';
-import { render } from '@testing-library/react';
-import BookList from './BookList';
+import React, { useContext } from 'react';
+import ReactDom from 'react-dom';
+import WishList from './WishList';
 
-test('renders learn react link', () => {
-  const { getByText } = render(<BookList />);
-  const linkElement = getByText(/javascript/i);
-  expect(linkElement).toBeInTheDocument();
+describe("WishList component", () => {
+
+  test('renders learn react link', () => {
+    const div = document.createElement('div');
+    ReactDom.render(<WishList />, div);
+  });
+
 });
