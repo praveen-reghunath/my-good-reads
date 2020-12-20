@@ -11,7 +11,7 @@ interface Props {
 }
 
 function WishListItem(props: Props) {
-    const { label, id, onRemove = () => { } } = props;
+    const { label, id, onRemove } = props;
 
     const onCloseClick = () => {
         onRemove(id);
@@ -21,7 +21,7 @@ function WishListItem(props: Props) {
         <li className="wish-list-item">
             <span className="item-label">{label}</span>
             <span className="remove">
-                <FontAwesomeIcon icon={faTrashAlt} onClick={onCloseClick} />
+                <FontAwesomeIcon data-testid="btn-remove" icon={faTrashAlt} onClick={onCloseClick} />
             </span>
         </li>
     );
