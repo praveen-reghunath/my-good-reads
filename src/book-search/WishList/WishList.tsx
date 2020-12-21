@@ -2,8 +2,6 @@ import React, { useContext } from "react";
 import WishListItem from '../WishListItem';
 import BookContext from '../BookState/BookContext';
 
-import './WishList.scss';
-
 interface Props {
 
 }

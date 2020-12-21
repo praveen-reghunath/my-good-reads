@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { getBooksByType } from './book-search.service';
 import BookList from './BookList';
 
-import './BookSearch.scss';
-
 const BookSearch = () => {
     const [bookType, updateBookType] = useState("");
     const [bookTypeToSearch, updateBookTypeToSearch] = useState("");

@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTrashAlt } from '@fortawesome/free-solid-svg-icons'
 
-import './WishListItem.scss';
-
 interface Props {
     id: string;
     label: string;

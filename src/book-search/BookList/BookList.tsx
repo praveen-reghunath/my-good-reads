@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import './BookList.scss';
 import { BookInfo } from '../types';
 
 import BookItem from '../BookItem';

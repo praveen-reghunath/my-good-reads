@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useContext } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart } from '@fortawesome/free-solid-svg-icons'
-import './BookItem.scss';
 import { BookInfo } from '../types';
 import BookContext from '../BookState/BookContext';
 
